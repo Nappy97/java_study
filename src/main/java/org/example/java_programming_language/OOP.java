@@ -22,6 +22,7 @@ public class OOP {
 
 }
 
+//
 class Tv {
     // 속성 (멤버변수)
     String color;
