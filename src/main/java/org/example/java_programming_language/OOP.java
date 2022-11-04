@@ -4,7 +4,7 @@ public class OOP {
 
     public static void main(String[] args) {
         Tv t;
-        t = new Tv();
+        t = new Tv(7);
         t.channel = 7;
         t.channelDown();
         System.out.println("현재 채널은 " + t.channel + "입니다");
@@ -12,7 +12,7 @@ public class OOP {
         Tv[] tvArr = new Tv[3];
 
         for (int i = 0; i < tvArr.length; i++) {
-            tvArr[i] = new Tv();
+            tvArr[i] = new Tv(7);
             tvArr[i].channel = i + 10;
         }
 
@@ -41,5 +41,9 @@ class Tv {
 
     void channelDown() {
         --channel;
+    }
+
+    public Tv(int channel) {
+        this.channel = channel;
     }
 }
