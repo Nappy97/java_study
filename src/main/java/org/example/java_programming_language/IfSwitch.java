@@ -19,7 +19,7 @@ public class IfSwitch {
         int ascii;
         String value;
 
-        String fail = "대출불가";
+        final String fail = "대출불가";
 
         String result = null;
         String able[][] = {
@@ -32,19 +32,19 @@ public class IfSwitch {
 
         if (grade >= 90) {
             grade1 = 'A';
-            ascii = (int) grade1;
+            ascii = grade1;
         } else if (grade >= 80) {
             grade1 = 'B';
-            ascii = (int) grade1;
+            ascii = grade1;
         } else if (grade >= 70) {
             grade1 = 'C';
-            ascii = (int) grade1;
+            ascii = grade1;
         } else if (grade >= 60) {
             grade1 = 'D';
-            ascii = (int) grade1;
+            ascii = grade1;
         } else {
             grade1 = 'F';
-            ascii = (int) grade1;
+            ascii = grade1;
         }
 
         if (borrow >= 1000) {
@@ -69,12 +69,12 @@ public class IfSwitch {
             }
         } else {
             value = borrow + "만원 대출신청";
-            if (ascii == 70){
+            if (ascii == 70) {
                 result = fail;
             }
         }
 
-        System.out.println("고객님의 신용등급은 " + grade + "(" + grade1 + ") 이며," );
+        System.out.println("고객님의 신용등급은 " + grade + "(" + grade1 + ") 이며,");
         System.out.println("신청금액은 " + value + "입니다.");
 
         if (result == fail) {
