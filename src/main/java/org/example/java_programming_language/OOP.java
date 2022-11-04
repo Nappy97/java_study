@@ -3,9 +3,7 @@ package org.example.java_programming_language;
 public class OOP {
 
     public static void main(String[] args) {
-        Tv t;
-        t = new Tv(7);
-        t.channel = 7;
+        Tv t = new Tv(7);
         t.channelDown();
         System.out.println("현재 채널은 " + t.channel + "입니다");
 

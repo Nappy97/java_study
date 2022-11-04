@@ -69,12 +69,12 @@ public class IfSwitch {
             }
         } else {
             value = borrow + "만원 대출신청";
-            if (ascii == 70){
+            if (ascii == 70) {
                 result = fail;
             }
         }
 
-        System.out.println("고객님의 신용등급은 " + grade + "(" + grade1 + ") 이며," );
+        System.out.println("고객님의 신용등급은 " + grade + "(" + grade1 + ") 이며,");
         System.out.println("신청금액은 " + value + "입니다.");
 
         if (result == fail) {
