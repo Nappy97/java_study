@@ -3,9 +3,7 @@ package org.example.java_programming_language;
 public class OOP {
 
     public static void main(String[] args) {
-        Tv t;
-        t = new Tv();
-        t.channel = 7;
+        Tv t = new Tv();
         t.channelDown();
         System.out.println("현재 채널은 " + t.channel + "입니다");
 
@@ -28,7 +26,7 @@ class Tv {
     // 속성 (멤버변수)
     String color;
     boolean power;
-    int channel;
+    static int channel = 7;
 
     // 기능(메서드)
     void power() {
@@ -42,4 +40,8 @@ class Tv {
     void channelDown() {
         --channel;
     }
+
+//    public Tv(int channel){
+//        this.channel = channel;
+//    }
 }
